@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/Connect4">
+        <file>Resources/download.png</file>
+        <file>Resources/api.png</file>
+    </qresource>
+</RCC>
