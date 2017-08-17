@@ -15,10 +15,10 @@ class GameBoard {
 
 public:
     void colSelected(int col);
+    bool didWin(int col, int row);
 
     PieceLabel::Player playerUp = PieceLabel::Player_1;
 
-    //GameBoard(vector<vector<PieceLabel*>> labels);
     ~GameBoard();
     static GameBoard* GetInstance(vector<vector<PieceLabel*>> labels = { {} });
 
