@@ -9,6 +9,7 @@ class Connect4 : public QMainWindow
 
 public:
     Connect4(QWidget *parent = Q_NULLPTR);
+    vector< vector< PieceLabel* > > GetLabels();
 
 private:
     Ui::Connect4Class ui;

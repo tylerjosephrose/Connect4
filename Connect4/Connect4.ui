@@ -25,7 +25,7 @@
     </property>
     <layout class="QGridLayout" name="gridForPieces">
      <item row="3" column="5">
-      <widget class="QLabel" name="piece35">
+      <widget class="PieceLabel" name="piece35">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -47,7 +47,7 @@
       </widget>
      </item>
      <item row="5" column="5">
-      <widget class="QLabel" name="piece55">
+      <widget class="PieceLabel" name="piece55">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -69,7 +69,7 @@
       </widget>
      </item>
      <item row="4" column="2">
-      <widget class="QLabel" name="piece42">
+      <widget class="PieceLabel" name="piece42">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -91,7 +91,7 @@
       </widget>
      </item>
      <item row="4" column="4">
-      <widget class="QLabel" name="piece44">
+      <widget class="PieceLabel" name="piece44">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -113,7 +113,7 @@
       </widget>
      </item>
      <item row="0" column="2">
-      <widget class="QLabel" name="piece02">
+      <widget class="PieceLabel" name="piece02">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -135,7 +135,7 @@
       </widget>
      </item>
      <item row="4" column="5">
-      <widget class="QLabel" name="piece45">
+      <widget class="PieceLabel" name="piece45">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -157,7 +157,7 @@
       </widget>
      </item>
      <item row="5" column="1">
-      <widget class="QLabel" name="piece51">
+      <widget class="PieceLabel" name="piece51">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -179,7 +179,7 @@
       </widget>
      </item>
      <item row="1" column="1">
-      <widget class="QLabel" name="piece11">
+      <widget class="PieceLabel" name="piece11">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -201,7 +201,7 @@
       </widget>
      </item>
      <item row="0" column="6">
-      <widget class="QLabel" name="piece06">
+      <widget class="PieceLabel" name="piece06">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -223,7 +223,7 @@
       </widget>
      </item>
      <item row="3" column="3">
-      <widget class="QLabel" name="piece33">
+      <widget class="PieceLabel" name="piece33">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -245,7 +245,7 @@
       </widget>
      </item>
      <item row="1" column="6">
-      <widget class="QLabel" name="piece16">
+      <widget class="PieceLabel" name="piece16">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -267,7 +267,7 @@
       </widget>
      </item>
      <item row="4" column="1">
-      <widget class="QLabel" name="piece41">
+      <widget class="PieceLabel" name="piece41">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -289,7 +289,7 @@
       </widget>
      </item>
      <item row="0" column="5">
-      <widget class="QLabel" name="piece05">
+      <widget class="PieceLabel" name="piece05">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -311,7 +311,7 @@
       </widget>
      </item>
      <item row="2" column="0">
-      <widget class="QLabel" name="piece20">
+      <widget class="PieceLabel" name="piece20">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -333,7 +333,7 @@
       </widget>
      </item>
      <item row="5" column="3">
-      <widget class="QLabel" name="piece53">
+      <widget class="PieceLabel" name="piece53">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -355,7 +355,7 @@
       </widget>
      </item>
      <item row="5" column="6">
-      <widget class="QLabel" name="piece56">
+      <widget class="PieceLabel" name="piece56">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -377,7 +377,7 @@
       </widget>
      </item>
      <item row="2" column="6">
-      <widget class="QLabel" name="piece26">
+      <widget class="PieceLabel" name="piece26">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -399,7 +399,7 @@
       </widget>
      </item>
      <item row="0" column="3">
-      <widget class="QLabel" name="piece03">
+      <widget class="PieceLabel" name="piece03">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -421,7 +421,7 @@
       </widget>
      </item>
      <item row="5" column="2">
-      <widget class="QLabel" name="piece52">
+      <widget class="PieceLabel" name="piece52">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -443,7 +443,7 @@
       </widget>
      </item>
      <item row="0" column="4">
-      <widget class="QLabel" name="piece04">
+      <widget class="PieceLabel" name="piece04">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -465,7 +465,7 @@
       </widget>
      </item>
      <item row="3" column="4">
-      <widget class="QLabel" name="piece34">
+      <widget class="PieceLabel" name="piece34">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -487,7 +487,7 @@
       </widget>
      </item>
      <item row="4" column="6">
-      <widget class="QLabel" name="piece46">
+      <widget class="PieceLabel" name="piece46">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -509,7 +509,7 @@
       </widget>
      </item>
      <item row="5" column="0">
-      <widget class="QLabel" name="piece50">
+      <widget class="PieceLabel" name="piece50">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -531,7 +531,7 @@
       </widget>
      </item>
      <item row="0" column="0">
-      <widget class="QLabel" name="piece00">
+      <widget class="PieceLabel" name="piece00">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -553,7 +553,7 @@
       </widget>
      </item>
      <item row="2" column="2">
-      <widget class="QLabel" name="piece22">
+      <widget class="PieceLabel" name="piece22">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -575,7 +575,7 @@
       </widget>
      </item>
      <item row="0" column="1">
-      <widget class="QLabel" name="piece01">
+      <widget class="PieceLabel" name="piece01">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -597,7 +597,7 @@
       </widget>
      </item>
      <item row="1" column="0">
-      <widget class="QLabel" name="piece10">
+      <widget class="PieceLabel" name="piece10">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -619,7 +619,7 @@
       </widget>
      </item>
      <item row="1" column="2">
-      <widget class="QLabel" name="piece12">
+      <widget class="PieceLabel" name="piece12">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -641,7 +641,7 @@
       </widget>
      </item>
      <item row="1" column="3">
-      <widget class="QLabel" name="piece13">
+      <widget class="PieceLabel" name="piece13">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -663,7 +663,7 @@
       </widget>
      </item>
      <item row="1" column="4">
-      <widget class="QLabel" name="piece14">
+      <widget class="PieceLabel" name="piece14">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -685,7 +685,7 @@
       </widget>
      </item>
      <item row="1" column="5">
-      <widget class="QLabel" name="piece15">
+      <widget class="PieceLabel" name="piece15">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -707,7 +707,7 @@
       </widget>
      </item>
      <item row="3" column="6">
-      <widget class="QLabel" name="piece36">
+      <widget class="PieceLabel" name="piece36">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -729,7 +729,7 @@
       </widget>
      </item>
      <item row="2" column="5">
-      <widget class="QLabel" name="piece25">
+      <widget class="PieceLabel" name="piece25">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -751,7 +751,7 @@
       </widget>
      </item>
      <item row="3" column="0">
-      <widget class="QLabel" name="piece30">
+      <widget class="PieceLabel" name="piece30">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -773,7 +773,7 @@
       </widget>
      </item>
      <item row="2" column="1">
-      <widget class="QLabel" name="piece21">
+      <widget class="PieceLabel" name="piece21">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -795,7 +795,7 @@
       </widget>
      </item>
      <item row="2" column="4">
-      <widget class="QLabel" name="piece24">
+      <widget class="PieceLabel" name="piece24">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -817,7 +817,7 @@
       </widget>
      </item>
      <item row="2" column="3">
-      <widget class="QLabel" name="piece23">
+      <widget class="PieceLabel" name="piece23">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -839,7 +839,7 @@
       </widget>
      </item>
      <item row="5" column="4">
-      <widget class="QLabel" name="piece54">
+      <widget class="PieceLabel" name="piece54">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -861,7 +861,7 @@
       </widget>
      </item>
      <item row="4" column="3">
-      <widget class="QLabel" name="piece43">
+      <widget class="PieceLabel" name="piece43">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -883,7 +883,7 @@
       </widget>
      </item>
      <item row="3" column="2">
-      <widget class="QLabel" name="piece32">
+      <widget class="PieceLabel" name="piece32">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -905,7 +905,7 @@
       </widget>
      </item>
      <item row="4" column="0">
-      <widget class="QLabel" name="piece40">
+      <widget class="PieceLabel" name="piece40">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -927,7 +927,7 @@
       </widget>
      </item>
      <item row="3" column="1">
-      <widget class="QLabel" name="piece31">
+      <widget class="PieceLabel" name="piece31">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
          <horstretch>0</horstretch>
@@ -963,7 +963,7 @@
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Connect Four&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="RowButton" name="row0">
+   <widget class="ColButton" name="row0">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -975,8 +975,14 @@
     <property name="text">
      <string/>
     </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+    <property name="Col" stdset="0">
+     <number>0</number>
+    </property>
    </widget>
-   <widget class="RowButton" name="row1">
+   <widget class="ColButton" name="row1">
     <property name="geometry">
      <rect>
       <x>90</x>
@@ -988,8 +994,14 @@
     <property name="text">
      <string/>
     </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+    <property name="Col" stdset="0">
+     <number>1</number>
+    </property>
    </widget>
-   <widget class="RowButton" name="row2">
+   <widget class="ColButton" name="row2">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -1001,8 +1013,14 @@
     <property name="text">
      <string/>
     </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+    <property name="Col" stdset="0">
+     <number>2</number>
+    </property>
    </widget>
-   <widget class="RowButton" name="row3">
+   <widget class="ColButton" name="row3">
     <property name="geometry">
      <rect>
       <x>230</x>
@@ -1014,8 +1032,14 @@
     <property name="text">
      <string/>
     </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+    <property name="Col" stdset="0">
+     <number>3</number>
+    </property>
    </widget>
-   <widget class="RowButton" name="row4">
+   <widget class="ColButton" name="row4">
     <property name="geometry">
      <rect>
       <x>310</x>
@@ -1027,8 +1051,14 @@
     <property name="text">
      <string/>
     </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+    <property name="Col" stdset="0">
+     <number>4</number>
+    </property>
    </widget>
-   <widget class="RowButton" name="row5">
+   <widget class="ColButton" name="row5">
     <property name="geometry">
      <rect>
       <x>380</x>
@@ -1040,8 +1070,14 @@
     <property name="text">
      <string/>
     </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+    <property name="Col" stdset="0">
+     <number>5</number>
+    </property>
    </widget>
-   <widget class="RowButton" name="row6">
+   <widget class="ColButton" name="row6">
     <property name="geometry">
      <rect>
       <x>450</x>
@@ -1052,6 +1088,12 @@
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+    <property name="Col" stdset="0">
+     <number>6</number>
     </property>
    </widget>
    <zorder>Title</zorder>
@@ -1087,9 +1129,14 @@
  <layoutdefault spacing="6" margin="11"/>
  <customwidgets>
   <customwidget>
-   <class>RowButton</class>
+   <class>PieceLabel</class>
+   <extends>QLabel</extends>
+   <header>PieceLabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ColButton</class>
    <extends>QPushButton</extends>
-   <header>RowButton.h</header>
+   <header>ColButton.h</header>
   </customwidget>
  </customwidgets>
  <resources>

@@ -69,6 +69,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Connect4.cpp" />
+    <ClCompile Include="GameBoard.cpp" />
     <ClCompile Include="GeneratedFiles\Debug\moc_Connect4.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -82,7 +83,8 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="RowButton.cpp" />
+    <ClCompile Include="PieceLabel.cpp" />
+    <ClCompile Include="ColButton.cpp" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="Connect4.h">
@@ -109,8 +111,10 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="GameBoard.h" />
     <ClInclude Include="GeneratedFiles\ui_Connect4.h" />
-    <CustomBuild Include="RowButton.h">
+    <ClInclude Include="PieceLabel.h" />
+    <CustomBuild Include="ColButton.h">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
       </Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">

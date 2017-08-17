@@ -1,26 +1,24 @@
-﻿Build started 8/17/2017 10:00:00 AM.
+﻿Build started 8/17/2017 1:52:31 PM.
      1>Project "C:\Users\sv7vku\Documents\Visual Studio 2015\Projects\Connect4\Connect4\Connect4.vcxproj" on node 2 (Build target(s)).
      1>CustomBuild:
-         Uic'ing Connect4.ui...
-         Rcc'ing Connect4.qrc...
+         Moc'ing Connect4.h...
        ClCompile:
-         C:\apps\MVS14\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\5.9.1\msvc2015_64\include /I.\GeneratedFiles\Debug /IC:\Qt\5.9.1\msvc2015_64\include\QtCore /IC:\Qt\5.9.1\msvc2015_64\include\QtGui /IC:\Qt\5.9.1\msvc2015_64\include\QtWidgets /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt Connect4.cpp GeneratedFiles\Debug\moc_Connect4.cpp main.cpp
-         Connect4.cpp
+         C:\apps\MVS14\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\5.9.1\msvc2015_64\include /I.\GeneratedFiles\Debug /IC:\Qt\5.9.1\msvc2015_64\include\QtCore /IC:\Qt\5.9.1\msvc2015_64\include\QtGui /IC:\Qt\5.9.1\msvc2015_64\include\QtWidgets /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt GameBoard.cpp GeneratedFiles\Debug\moc_Connect4.cpp
+         GameBoard.cpp
          moc_Connect4.cpp
-         main.cpp
          Generating Code...
-         C:\apps\MVS14\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\5.9.1\msvc2015_64\include /I.\GeneratedFiles\Debug /IC:\Qt\5.9.1\msvc2015_64\include\QtCore /IC:\Qt\5.9.1\msvc2015_64\include\QtGui /IC:\Qt\5.9.1\msvc2015_64\include\QtWidgets /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt GeneratedFiles\qrc_Connect4.cpp
-         qrc_Connect4.cpp
        Link:
          C:\apps\MVS14\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\sv7vku\Documents\Visual Studio 2015\Projects\Connect4\x64\Debug\\Connect4.exe" /NOLOGO /LIBPATH:C:\Qt\5.9.1\msvc2015_64\lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Widgetsd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\sv7vku\Documents\Visual Studio 2015\Projects\Connect4\x64\Debug\Connect4.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\sv7vku\Documents\Visual Studio 2015\Projects\Connect4\x64\Debug\Connect4.lib" /MACHINE:X64 x64\Debug\Connect4.res
          x64\Debug\Connect4.obj
+         x64\Debug\GameBoard.obj
          x64\Debug\moc_Connect4.obj
          x64\Debug\qrc_Connect4.obj
          x64\Debug\main.obj
-         x64\Debug\RowButton.obj
+         x64\Debug\PieceLabel.obj
+         x64\Debug\ColButton.obj
          Connect4.vcxproj -> C:\Users\sv7vku\Documents\Visual Studio 2015\Projects\Connect4\x64\Debug\Connect4.exe
      1>Done Building Project "C:\Users\sv7vku\Documents\Visual Studio 2015\Projects\Connect4\Connect4\Connect4.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:05.93
+Time Elapsed 00:00:02.35

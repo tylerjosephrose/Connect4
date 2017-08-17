@@ -55,7 +55,13 @@
     <ClCompile Include="GeneratedFiles\qrc_Connect4.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="RowButton.cpp">
+    <ClCompile Include="PieceLabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameBoard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ColButton.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -69,13 +75,19 @@
     <CustomBuild Include="Connect4.qrc">
       <Filter>Resource Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="RowButton.h">
+    <CustomBuild Include="ColButton.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_Connect4.h">
       <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PieceLabel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameBoard.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
