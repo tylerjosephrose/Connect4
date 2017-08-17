@@ -1,4 +1,4 @@
-﻿Build started 8/17/2017 2:53:41 PM.
+﻿Build started 8/17/2017 3:57:44 PM.
      1>Project "C:\Users\sv7vku\Documents\Visual Studio 2015\Projects\Connect4\Connect4\Connect4.vcxproj" on node 2 (Build target(s)).
      1>CustomBuild:
          Moc'ing Connect4.h...
@@ -21,4 +21,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.38
+Time Elapsed 00:00:02.36

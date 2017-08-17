@@ -38,9 +38,9 @@ void GameBoard::colSelected(int col) {
 bool GameBoard::didWin(int col, int row)
 {
     // Determine vertical victory
-    if (row >= 3) {
+    if (row <= 2) {
         int inARow = 1;
-        for (int i = row - 1; i > 0; i--) {
+        for (int i = row + 1; i > 0; i++) {
             if (m_board[col][i]->getCurrentOwner() == playerUp) {
                 inARow++;
                 if (inARow == 4)
@@ -64,7 +64,64 @@ bool GameBoard::didWin(int col, int row)
     }
 
     // Determine diagonal victory
-    
+    int increasingIntercept = row + col;
+    int decreasingIntercept = row - col;
+    // must be between 3 and 9 to be possible even though we only have up to 5 in rows
+    if (increasingIntercept < 9 && increasingIntercept > 3) {
+        if (increasingIntercept > 5) {
+            // do special stuff since intercept is out of bounds
+            int inARow = 0;
+            for (int i = 5, j = increasingIntercept - 5; i >= 0 && j < 7; i--, j++) {
+                if (m_board[j][i]->getCurrentOwner() == playerUp) {
+                    inARow++;
+                    if (inARow == 4)
+                        return true;
+                }
+                else
+                    inARow = 0;
+            }
+        }
+        else {
+            int inARow = 0;
+            // loop on both row and col until one is out of bounds
+            for (int i = increasingIntercept, j = 0; i >= 0 && j < 7; i--, j++) {
+                if (m_board[j][i]->getCurrentOwner() == playerUp) {
+                    inARow++;
+                    if (inARow == 4)
+                        return true;
+                }
+                else
+                    inARow = 0;
+            }
+        }
+    }
+    if (decreasingIntercept > -4 && decreasingIntercept < 2) {
+        if (decreasingIntercept < 0) {
+            // Do special stuff since intercept is out of bounds
+            int inARow = 0;
+            for (int i = 0, j = decreasingIntercept * -1; i < 6 && j < 7; i++, j++) {
+                if (m_board[j][i]->getCurrentOwner() == playerUp) {
+                    inARow++;
+                    if (inARow == 4)
+                        return true;
+                }
+                else
+                    inARow = 0;
+            }
+        }
+        else {
+            int inARow = 0;
+            for (int i = decreasingIntercept, j = 0; i < 6 && j < 7; i++, j++) {
+                if (m_board[j][i]->getCurrentOwner() == playerUp) {
+                    inARow++;
+                    if (inARow == 4)
+                        return true;
+                }
+                else
+                    inARow = 0;
+            }
+        }
+    }
 
     return false;
 }
