@@ -162,6 +162,18 @@ void GameBoard::restartGame() {
     totalPieces = 0;
 }
 
+vector<vector<PieceLabel::Player>> GameBoard::GetBoard() {
+    vector<vector<PieceLabel::Player>> board;
+    for (auto col : m_board) {
+        vector<PieceLabel::Player> column;
+        for (auto piece : col) {
+            column.push_back(piece->getCurrentOwner());
+        }
+        board.push_back(column);
+    }
+    return board;
+}
+
 GameBoard::GameBoard(vector<vector<PieceLabel*>> labels) {
     m_board = labels;
 }

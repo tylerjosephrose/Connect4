@@ -17,6 +17,7 @@ public:
     void colSelected(int col);
     bool didWin(int col, int row);
 	void restartGame();
+    vector<vector<PieceLabel::Player>> GetBoard();
 
     PieceLabel::Player playerUp = PieceLabel::Player_1;
 
