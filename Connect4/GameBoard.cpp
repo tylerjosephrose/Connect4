@@ -4,6 +4,7 @@ Tyler Rose
 */
 
 #include <GameBoard.h>
+#include <GameOver.h>
 
 GameBoard* GameBoard::m_instance = 0;
 
@@ -27,7 +28,14 @@ void GameBoard::colSelected(int col) {
         }
     }
     if (didWin(col, row)) {
-        int i = 1;
+        GameOver* dialog = new GameOver();
+		QString string;
+		if (playerUp == PieceLabel::Player_1)
+			string = QString("Player 1 won!");
+		else
+			string = QString("Player 2 won!");
+		dialog->setTitle(string);
+		dialog->exec();
     }
     if (playerUp == PieceLabel::Player_1)
         playerUp = PieceLabel::Player_2;
@@ -38,14 +46,18 @@ void GameBoard::colSelected(int col) {
 bool GameBoard::didWin(int col, int row)
 {
     // Determine vertical victory
+	
     if (row <= 2) {
         int inARow = 1;
-        for (int i = row + 1; i > 0; i++) {
+        for (int i = row + 1; i < 6; i++) {
             if (m_board[col][i]->getCurrentOwner() == playerUp) {
                 inARow++;
-                if (inARow == 4)
-                    return true;
-            }
+				if (inARow == 4)
+					return true;
+			}
+			else {
+				inARow = 0;
+			}
         }
     }
     
@@ -57,9 +69,12 @@ bool GameBoard::didWin(int col, int row)
         for (int i = 0; i < 7; i++) {
             if (m_board[i][row]->getCurrentOwner() == playerUp) {
                 inARow++;
-                if (inARow == 4)
-                    return true;
-            }
+				if (inARow == 4)
+					return true;
+			}
+			else {
+				inARow = 0;
+			}
         }
     }
 
@@ -74,8 +89,8 @@ bool GameBoard::didWin(int col, int row)
             for (int i = 5, j = increasingIntercept - 5; i >= 0 && j < 7; i--, j++) {
                 if (m_board[j][i]->getCurrentOwner() == playerUp) {
                     inARow++;
-                    if (inARow == 4)
-                        return true;
+					if (inARow == 4)
+						return true;
                 }
                 else
                     inARow = 0;
@@ -87,8 +102,8 @@ bool GameBoard::didWin(int col, int row)
             for (int i = increasingIntercept, j = 0; i >= 0 && j < 7; i--, j++) {
                 if (m_board[j][i]->getCurrentOwner() == playerUp) {
                     inARow++;
-                    if (inARow == 4)
-                        return true;
+					if (inARow == 4)
+						return true;
                 }
                 else
                     inARow = 0;
@@ -102,8 +117,8 @@ bool GameBoard::didWin(int col, int row)
             for (int i = 0, j = decreasingIntercept * -1; i < 6 && j < 7; i++, j++) {
                 if (m_board[j][i]->getCurrentOwner() == playerUp) {
                     inARow++;
-                    if (inARow == 4)
-                        return true;
+					if (inARow == 4)
+						return true;
                 }
                 else
                     inARow = 0;
@@ -114,8 +129,8 @@ bool GameBoard::didWin(int col, int row)
             for (int i = decreasingIntercept, j = 0; i < 6 && j < 7; i++, j++) {
                 if (m_board[j][i]->getCurrentOwner() == playerUp) {
                     inARow++;
-                    if (inARow == 4)
-                        return true;
+					if (inARow == 4)
+						return true;
                 }
                 else
                     inARow = 0;
