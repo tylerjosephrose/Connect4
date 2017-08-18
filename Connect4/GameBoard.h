@@ -16,6 +16,7 @@ class GameBoard {
 public:
     void colSelected(int col);
     bool didWin(int col, int row);
+	void restartGame();
 
     PieceLabel::Player playerUp = PieceLabel::Player_1;
 
@@ -26,4 +27,5 @@ private:
     static GameBoard* m_instance;
     GameBoard(vector<vector<PieceLabel*>> labels);
     vector< vector<PieceLabel*> > m_board;
+	int totalPieces = 0;
 };

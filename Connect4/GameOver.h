@@ -9,6 +9,8 @@ class GameOver : public QDialog
 
 public:
 	void setTitle(QString text);
+	void closeClicked();
+	void restartClicked();
 
 	GameOver(QWidget *parent = Q_NULLPTR);
 
