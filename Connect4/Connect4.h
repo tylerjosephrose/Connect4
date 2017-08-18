@@ -1,7 +1,7 @@
 #pragma once
 
 #include <QtWidgets/QMainWindow>
-#include "ui_Connect4.h"
+#include <ui_Connect4.h>
 
 class QAction;
 class QMenu;

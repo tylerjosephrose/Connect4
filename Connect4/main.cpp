@@ -1,4 +1,4 @@
-#include "Connect4.h"
+#include <Connect4.h>
 #include <GameBoard.h>
 #include <QtWidgets/QApplication>
 

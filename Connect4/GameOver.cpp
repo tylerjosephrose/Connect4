@@ -1,5 +1,5 @@
 #include <GameBoard.h>
-#include "GameOver.h"
+#include <GameOver.h>
 
 GameOver::GameOver(QWidget *parent)
 	: QDialog(parent)

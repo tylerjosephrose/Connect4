@@ -3,8 +3,8 @@ This will be the class for my buttons to select the row to drop the piece in
 Tyler Rose
 */
 
-#include "GameBoard.h"
-#include "ColButton.h"
+#include <GameBoard.h>
+#include <ColButton.h>
 
 void ColButton::colClicked() {
     //QPixmap pixmap(":/Connect4/Resources/Red.PNG");

@@ -1,7 +1,7 @@
 #pragma once
 
 #include <QtWidgets/QDialog>
-#include "ui_GameOver.h"
+#include <ui_GameOver.h>
 
 class GameOver : public QDialog
 {
