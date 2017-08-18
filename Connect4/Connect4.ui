@@ -1125,6 +1125,21 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionRules">
+   <property name="text">
+    <string>Rules</string>
+   </property>
+  </action>
+  <action name="actionRestart_2">
+   <property name="text">
+    <string>Restart</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <customwidgets>

@@ -9,9 +9,12 @@ Tyler Rose
 GameBoard* GameBoard::m_instance = 0;
 
 void GameBoard::colSelected(int col) {
-	totalPieces++;
     vector<PieceLabel*> column = m_board[col];
+    if (column[0]->getCurrentOwner() != PieceLabel::No_Player) {
+        return;
+    }
     int row;
+    totalPieces++;
     for (int i = 5; i >= 0; i--) {
         if (column[i]->getCurrentOwner() == PieceLabel::No_Player) {
             if (playerUp == PieceLabel::Player_1) {
@@ -41,7 +44,7 @@ void GameBoard::colSelected(int col) {
 	if (totalPieces == 42) {
 		GameOver* dialog = new GameOver();
 		QString string;
-		string = QString("Tie! No More Moves!");
+		string = QString("No More Moves!");
 		dialog->setTitle(string);
 		dialog->exec();
 	}
@@ -156,6 +159,7 @@ void GameBoard::restartGame() {
 			m_board[i][j]->setPixmap(QPixmap(":/Connect4/Resources/Blank.PNG"));
 		}
 	}
+    totalPieces = 0;
 }
 
 GameBoard::GameBoard(vector<vector<PieceLabel*>> labels) {

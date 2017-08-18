@@ -29,6 +29,9 @@ QT_BEGIN_NAMESPACE
 class Ui_Connect4Class
 {
 public:
+    QAction *actionClose;
+    QAction *actionRules;
+    QAction *actionRestart_2;
     QWidget *centralWidget;
     QWidget *gridLayoutWidget;
     QGridLayout *gridForPieces;
@@ -91,6 +94,12 @@ public:
         if (Connect4Class->objectName().isEmpty())
             Connect4Class->setObjectName(QStringLiteral("Connect4Class"));
         Connect4Class->resize(558, 497);
+        actionClose = new QAction(Connect4Class);
+        actionClose->setObjectName(QStringLiteral("actionClose"));
+        actionRules = new QAction(Connect4Class);
+        actionRules->setObjectName(QStringLiteral("actionRules"));
+        actionRestart_2 = new QAction(Connect4Class);
+        actionRestart_2->setObjectName(QStringLiteral("actionRestart_2"));
         centralWidget = new QWidget(Connect4Class);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         gridLayoutWidget = new QWidget(centralWidget);
@@ -591,6 +600,9 @@ public:
     void retranslateUi(QMainWindow *Connect4Class)
     {
         Connect4Class->setWindowTitle(QApplication::translate("Connect4Class", "Connect4", Q_NULLPTR));
+        actionClose->setText(QApplication::translate("Connect4Class", "Close", Q_NULLPTR));
+        actionRules->setText(QApplication::translate("Connect4Class", "Rules", Q_NULLPTR));
+        actionRestart_2->setText(QApplication::translate("Connect4Class", "Restart", Q_NULLPTR));
         piece35->setText(QString());
         piece55->setText(QString());
         piece42->setText(QString());
