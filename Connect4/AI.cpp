@@ -9,6 +9,7 @@ Tyler Rose
 static int INF = 2147483647;
 static int NEG_INF = -2147483648;
 #define ASSERT(bool) assert(bool)
+AI* AI::m_instance = 0;
 
 AI::AI() {
 
@@ -64,7 +65,7 @@ Node* AI::makeTreeInternal(int d, PieceLabel::Player p, vector<vector<PieceLabel
     Node* returnNode;
     for (int i = 0; i < 7; i++) {
         vector<vector<PieceLabel::Player>> newBoard;
-        newBoard = setHypotheticalPiece(i, b);
+        newBoard = setHypotheticalPiece(i, p, b);
         if (newBoard.size() == 0)
             return nullptr;
         Node* temp = makeTreeInternal(d - 1, p, newBoard);
@@ -113,4 +114,10 @@ int AI::checkThrees(vector<vector<PieceLabel::Player>> b, PieceLabel::Player p) 
 
 int AI::checkTwos(vector<vector<PieceLabel::Player>> b, PieceLabel::Player p) {
     return 2;
+}
+
+AI* AI::GetInstance() {
+    if (m_instance == NULL)
+        m_instance = new AI();
+    return m_instance;
 }

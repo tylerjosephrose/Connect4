@@ -3,6 +3,7 @@ This will hold the board and all pertinent methods
 Tyler Rose
 */
 
+#include <AI.h>
 #include <GameBoard.h>
 #include <GameOver.h>
 
@@ -52,6 +53,7 @@ void GameBoard::colSelected(int col) {
         playerUp = PieceLabel::Player_2;
     else
         playerUp = PieceLabel::Player_1;
+    Node* test = AI::GetInstance()->makeTree(3, PieceLabel::Player_2);
 }
 
 bool GameBoard::didWin(int col, int row)

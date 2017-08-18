@@ -20,6 +20,7 @@ public:
 
     int alphabeta(Node* node, int depth, int a, int b, bool maximize);
     Node* makeTree(int depth, PieceLabel::Player p);
+    static AI* GetInstance();
 
 private:
     int scoreNode(Node* n);
@@ -33,5 +34,7 @@ private:
             return PieceLabel::Player_2;
         return PieceLabel::Player_1;
     }
+
+    static AI* m_instance;
 };
 
