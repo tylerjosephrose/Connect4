@@ -28,5 +28,6 @@ private:
     static GameBoard* m_instance;
     GameBoard(vector<vector<PieceLabel*>> labels);
     vector< vector<PieceLabel*> > m_board;
+	void AIGo();
 	int totalPieces = 0;
 };

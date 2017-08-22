@@ -6,8 +6,11 @@ Tyler Rose
 #include <AI.h>
 #include <GameBoard.h>
 #include <GameOver.h>
+#include <unordered_set>
 
 GameBoard* GameBoard::m_instance = 0;
+static int INF = 2147483647;
+static int NEG_INF = -2147483648;
 
 void GameBoard::colSelected(int col) {
     vector<PieceLabel*> column = m_board[col];
@@ -49,11 +52,12 @@ void GameBoard::colSelected(int col) {
 		dialog->setTitle(string);
 		dialog->exec();
 	}
-    if (playerUp == PieceLabel::Player_1)
-        playerUp = PieceLabel::Player_2;
+	if (playerUp == PieceLabel::Player_1) {
+		playerUp = PieceLabel::Player_2;
+		AIGo();
+	}
     else
         playerUp = PieceLabel::Player_1;
-    Node* test = AI::GetInstance()->makeTree(3, PieceLabel::Player_2);
 }
 
 bool GameBoard::didWin(int col, int row)
@@ -174,6 +178,33 @@ vector<vector<PieceLabel::Player>> GameBoard::GetBoard() {
         board.push_back(column);
     }
     return board;
+}
+
+void GameBoard::AIGo() {
+	AI* ai = AI::GetInstance();
+	Node* root = ai->makeTree(3, PieceLabel::Player_2);
+
+	// check which of 7 columns is the best option
+	vector<int> results;
+	for (int i = 0; i < 7; i++) {
+		// alpha starts at -infinity while beta starts at infinity
+		if (root->children[i] != nullptr)
+			results.push_back(ai->alphabeta(root->children[i], NEG_INF, INF, true));
+		else
+			results.push_back(NEG_INF);
+	}
+	sort(results.begin(), results.end());
+	pair<int, int> best = { 6, results[6] };
+	unordered_set<int> same;
+	for (int i = 5; i >= 0; i--) {
+		if (results[i] == best.second)
+			same.insert(i);
+	}
+
+	if (same.size() > 0)
+		colSelected(rand() % same.size());
+	else
+		colSelected(best.first);
 }
 
 GameBoard::GameBoard(vector<vector<PieceLabel*>> labels) {
